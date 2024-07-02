@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+{% endblock %}
+
+{% block content %}
+<br>
+<form method="POST">
+    <h1 align="center">Login form</h1>
+    <br>
+    <br>
+      <div class="mb-3 row">
+        <label for="email" class="col-sm-2 col-form-label">Email Address</label>
+        <div class="col-sm-10">
+          <input type="email" name="email" class="form-control" id="email">
+        </div>
+      </div>
+    <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" name="password" class="form-control" id="inputPassword">
+        </div>
+      </div>
+
+      <br>
+      <button type="submit" class="btn btn-primary">Login !!</button>
+</form>
+{% endblock %}
